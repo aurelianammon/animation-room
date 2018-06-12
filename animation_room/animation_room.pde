@@ -73,6 +73,10 @@ int state = START; // main installation state
 
 boolean isPlaying = false; // is the installation loop running
 
+// is the video at the end or at the start?
+boolean start_state = 0;
+boolean end_state = 0;
+
 
 /* game logic - variables
 -------------------------------------------------- */
@@ -187,6 +191,9 @@ void draw() {
 
         println("start");
 
+        end_state == 0;
+        start_state == 1;
+
         OscMessage msg;
 
         msg = new OscMessage("/composition/layers/1/clips/1/connect");
@@ -250,7 +257,7 @@ void vorhang() {
     if (progress() == 1) {
 
         state = VIDEO;
-        movement = 1;
+        movement = 0;
 
         OscMessage mesg;
 
@@ -274,9 +281,11 @@ void video() {
 
     OscMessage msg;
 
-    if (time < millis() - 1000) {
+    if (time < millis() - 1000 && end_state == false) {
         //just every second
         if (movement() > 0) {
+
+            start_state = false;
 
             msg = new OscMessage("/composition/layers/1/clips/2/transport/position/behaviour/playdirection");
             msg.add(1);
@@ -332,6 +341,8 @@ public void update_movement() {
         movement = 1;
     } else if (movement < -1) {
         movement = -1;
+    } else if (start_state == true) {
+        movement = 0;
     }
 }
 
@@ -427,11 +438,13 @@ public void update_controllers() {
 }
 
 void oscEvent(OscMessage msg) {
-    if (msg.addrPattern().equals("/composition/layers/1/clips/2/transport/position/behaviour/playdirection") && msg.get(0).intValue() == 2) {
-        println("hit");
+    if (msg.addrPattern().equals("/composition/layers/1/clips/2/transport/position")) {
+        float value = msg.get(0).floatValue();
+        if (value == 0) {
+            start_state = true;
+        }
+        else if (value == 1) {
+            end_state = true;
+        }
     }
 }
-
-
-
-
