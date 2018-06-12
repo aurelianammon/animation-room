@@ -74,8 +74,8 @@ int state = START; // main installation state
 boolean isPlaying = false; // is the installation loop running
 
 // is the video at the end or at the start?
-boolean start_state = 0;
-boolean end_state = 0;
+boolean start_state = false;
+boolean end_state = false;
 
 
 /* game logic - variables
@@ -191,8 +191,8 @@ void draw() {
 
         println("start");
 
-        end_state == 0;
-        start_state == 1;
+        end_state = false;
+        start_state = true;
 
         OscMessage msg;
 
