@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Composition name="Composition" uniqueId="1499333061498" numDecks="3" currentDeckIndex="0" numLayers="3" numColumns="8" compositionIsRelative="0">
+	<versionInfo name="Resolume Arena" majorVersion="6" minorVersion="0" microVersion="0" revision="60521"/>
+	<CompositionInfo name="animation_room" description="" width="5763" height="1201">
+		<DeckInfo name="media" id="1528581426980" closed="0"/>
+		<DeckInfo name="empty" id="1528581426981" closed="0"/>
+		<DeckInfo name="empty" id="1528581426982" closed="0"/>
+	</CompositionInfo>
+	<Params name="Params">
+		<Param name="Name" default="" value="animation_room"/>
+		<Param name="KeyboardShortcutPreset" default="" value="Default"/>
+		<Param name="MidiShortcutPreset" default="" value="Default"/>
+		<Param name="OscShortcutPreset" default="" value="Test"/>
+		<Param name="DmxShortcutPreset" default="" value="Default"/>
+	</Params>
+	<Params name="Dashboard">
+		<ParamRange name="Link 1" altName="RGB" default="0" value="0"/>
+		<ParamRange name="Link 2" altName="Hue" default="0" value="0"/>
+		<ParamRange name="Link 3" altName="Distort" default="0" value="0"/>
+		<ParamRange name="Link 4" altName="Flip" default="0" value="0"/>
+		<ParamRange name="Link 5" altName="Kaleido" default="0" value="0"/>
+		<ParamRange name="Link 6" altName="Mirror" default="0" value="0"/>
+		<ParamRange name="Link 7" altName="Twitch" default="0" value="0"/>
+		<ParamRange name="Link 8" altName="Trails" default="0" value="0"/>
+	</Params>
+	<CompositionView name="CompositionObjectView">
+		<FoldParams name="FoldParams">
+			<FoldState component="/compositionproperties/dashboard/" folded="0"/>
+		</FoldParams>
+	</CompositionView>
+	<AudioTrack name="AudioTrack">
+		<AudioEffectChain name="AudioEffectChain"/>
+	</AudioTrack>
+	<VideoTrack name="VideoTrack">
+		<Params name="Params">
+			<ParamRange storage="3" name="Width" default="1920" value="5763"/>
+			<ParamRange storage="3" name="Height" default="1080" value="1201"/>
+		</Params>
+		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain">
+			<RenderPass storage="0" name="Transform" type="Transform" uniqueId="17122039101699797593" baseType="Effect" index="0">
+				<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+			</RenderPass>
+		</RenderPass>
+		<ChoosableMixer name="Blend"/>
+	</VideoTrack>
+	<Layer uniqueId="1528581427040" layerIndex="0">
+		<Params name="Params"/>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange storage="3" name="Width" default="5763" value="5763"/>
+				<ParamRange storage="3" name="Height" default="1201" value="1201"/>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="Transform" uniqueId="17122039101699797593" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice storage="3" name="Blend Mode" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueId="A005" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<RenderPass name="Alpha" type="Alpha" uniqueId="A006" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1528581427042" layerIndex="1">
+		<Params name="Params"/>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange storage="3" name="Width" default="5763" value="5763"/>
+				<ParamRange storage="3" name="Height" default="1201" value="1201"/>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="Transform" uniqueId="17122039101699797593" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice storage="3" name="Blend Mode" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueId="A005" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<RenderPass name="Alpha" type="Alpha" uniqueId="A006" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1528581427044" layerIndex="2">
+		<Params name="Params"/>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange storage="3" name="Width" default="5763" value="5763"/>
+				<ParamRange storage="3" name="Height" default="1201" value="1201"/>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="Transform" uniqueId="17122039101699797593" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice storage="3" name="Blend Mode" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueId="A005" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<RenderPass name="Alpha" type="Alpha" uniqueId="A006" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Column uniqueId="1528581427031" columnIndex="0"/>
+	<Column uniqueId="1528581427032" columnIndex="1"/>
+	<Column uniqueId="1528581427033" columnIndex="2"/>
+	<Column uniqueId="1528581427034" columnIndex="3"/>
+	<Column uniqueId="1528581427035" columnIndex="4"/>
+	<Column uniqueId="1528581427036" columnIndex="5"/>
+	<Column uniqueId="1528581427037" columnIndex="6"/>
+	<Column uniqueId="1528581427038" columnIndex="7"/>
+	<CrossFader name="CrossFader">
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange storage="3" name="Width" default="1920" value="1920"/>
+				<ParamRange storage="3" name="Height" default="1080" value="1080"/>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain">
+				<RenderPass name="Transform" type="Transform" uniqueId="17122039101699797593" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueId="A006" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Blend mode">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueId="A006" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</CrossFader>
+	<TempoController name="TempoController"/>
+	<Deck name="Deck" uniqueId="1528581426980" closed="0" numLayers="3" numColumns="8" deckIndex="0">
+		<Params name="Params">
+			<Param name="Name" default="empty" value="media"/>
+		</Params>
+		<Clip name="Clip" uniqueId="1528581748560" layerIndex="0" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/Vohang.mp4"/>
+				<VideoFile value="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/Vohang.mp4"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param storage="3" name="Name" default="Vohang" value="Vohang"/>
+				<ParamChoice storage="3" name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" default="0" value="11.609977324262963805">
+						<ValueRange name="minMax" min="0" max="60052"/>
+						<ValueRange name="startStop" min="0" max="60052"/>
+						<BehaviourDouble name="BehaviourDouble">
+							<PhaseSourceTimeline name="PhaseSourceTimeline" globalSpeedEnabled="1">
+								<Params name="Params">
+									<ParamRange storage="3" name="Beats" default="128" value="128"/>
+									<ParamRange storage="3" name="BPM" default="127.88916272563777454" value="127.88916272563777454"/>
+									<ParamRange storage="3" name="Speed" default="1" value="1"/>
+									<ParamChoice storage="3" name="Syncmode" default="0" value="0" storeChoices="0"/>
+									<ParamChoice storage="3" name="PlayDirection" default="1" value="1" storeChoices="0"/>
+									<ParamChoice storage="3" name="PlayMode" default="0" value="0" storeChoices="0"/>
+									<ParamChoice storage="3" name="PlayModeAway" default="0" value="0" storeChoices="0"/>
+									<Param storage="3" name="Finished" default="0" value="0"/>
+								</Params>
+								<ParamBasedDuration name="ParamBasedDuration"/>
+								<Beats_d name="Beats_d" mode="0" numDetectedBeats="-1" numManualBeats="128" detectedTempo="-1" manualTempo="127.88916272563777454" detected="0"/>
+							</PhaseSourceTimeline>
+						</BehaviourDouble>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/clipproperties/cuepoints/" folded="1"/>
+					<FoldState component="/clipproperties/transport/" folded="0"/>
+					<FoldState component="/groupedcomponent/groupedcomponent/audiotrackinfocomponent/tracksettingscomponent/audiosettingscomponent/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/tracksettingscomponent/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/tracksettingscomponent/videosettingscomponent/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" default="0" value="0">
+						<ValueRange name="minMax" min="-48" max="12"/>
+						<ValueRange name="startStop" min="-48" max="12"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/Vohang.mp4"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange storage="3" name="Width" default="1280" value="1280"/>
+					<ParamRange storage="3" name="Height" default="720" value="720"/>
+					<Param storage="3" name="RScale" default="1" value="1"/>
+					<Param storage="3" name="GScale" default="1" value="1"/>
+					<Param storage="3" name="BScale" default="1" value="1"/>
+					<Param storage="3" name="AScale" default="0" value="0"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="Transform" uniqueId="17122039101699797593" baseType="Effect" index="0">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1280" height="720" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/Vohang.mp4" LoadingThread="TTM_MESSAGE"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1528581748562" layerIndex="0" columnIndex="1">
+			<PreloadData>
+				<AudioFile value="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/SampleVideo_1280x720_10mb.mp4"/>
+				<VideoFile value="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/SampleVideo_1280x720_10mb.mp4"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param storage="3" name="Name" default="SampleVideo_1280x720_10mb" value="SampleVideo_1280x720_10mb"/>
+				<ParamChoice storage="3" name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" default="0" value="16959.692340521625738">
+						<ValueRange name="minMax" min="0" max="62270.666666666664241"/>
+						<ValueRange name="startStop" min="0" max="62270.666666666664241"/>
+						<BehaviourDouble name="BehaviourDouble">
+							<PhaseSourceTimeline name="PhaseSourceTimeline" globalSpeedEnabled="1">
+								<Params name="Params">
+									<ParamRange storage="3" name="Beats" default="128" value="128"/>
+									<ParamRange storage="3" name="BPM" default="123.33254823030641489" value="123.33254823030641489"/>
+									<ParamRange storage="3" name="Speed" default="1" value="1"/>
+									<ParamChoice storage="3" name="Syncmode" default="0" value="0" storeChoices="0"/>
+									<ParamChoice storage="3" name="PlayDirection" default="1" value="2" storeChoices="0"/>
+									<ParamChoice storage="3" name="PlayMode" default="0" value="3" storeChoices="0"/>
+									<ParamChoice storage="3" name="PlayModeAway" default="0" value="0" storeChoices="0"/>
+									<Param storage="3" name="Finished" default="0" value="0"/>
+								</Params>
+								<ParamBasedDuration name="ParamBasedDuration"/>
+								<Beats_d name="Beats_d" mode="0" numDetectedBeats="-1" numManualBeats="128" detectedTempo="-1" manualTempo="123.33254823030641489" detected="0"/>
+							</PhaseSourceTimeline>
+						</BehaviourDouble>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" default="0" value="0">
+						<ValueRange name="minMax" min="-48" max="12"/>
+						<ValueRange name="startStop" min="-48" max="12"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/SampleVideo_1280x720_10mb.mp4"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange storage="3" name="Width" default="1280" value="1280"/>
+					<ParamRange storage="3" name="Height" default="720" value="720"/>
+					<Param storage="3" name="RScale" default="1" value="1"/>
+					<Param storage="3" name="GScale" default="1" value="1"/>
+					<Param storage="3" name="BScale" default="1" value="1"/>
+					<Param storage="3" name="AScale" default="0" value="0"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="Transform" uniqueId="17122039101699797593" baseType="Effect" index="0">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1280" height="720" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueId="RenderPassChain" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="/Users/aurelianammon/Desktop/animation-room/resolume_arena_project/media/SampleVideo_1280x720_10mb.mp4" LoadingThread="TTM_MESSAGE"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+	</Deck>
+	<Deck name="Deck" uniqueId="1528581426981" numLayers="0" numColumns="0" closed="0" deckIndex="1"/>
+	<Deck name="Deck" uniqueId="1528581426982" numLayers="0" numColumns="0" closed="0" deckIndex="2"/>
+</Composition>
+
