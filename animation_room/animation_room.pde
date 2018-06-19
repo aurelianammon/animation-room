@@ -332,7 +332,7 @@ void end() {
 
 public void update_movement() {
 
-    float s_movement = 1; // se
+    float s_movement = 1; // maximal sensitivity for movement mapping
     float factor = map(disturbance, 0, 100, 0, s_movement);
 
     // movement = movement + (factor - sensibility * (movement * 0.1 + 0.5)) * (1 / frameRate);
@@ -341,7 +341,7 @@ public void update_movement() {
         movement = 1;
     } else if (movement < -1) {
         movement = -1;
-    } else if (start_state == true) {
+    } else if (start_state == true && movement < 0) {
         movement = 0;
     }
 }
